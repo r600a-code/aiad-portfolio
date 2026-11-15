@@ -292,7 +292,7 @@ figcaption{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:va
 .ticket:hover{transform:translateY(-5px);box-shadow:6px 6px 0 rgba(196,54,42,.18)}
 .ticket::before,.ticket::after{content:"";position:absolute;width:9px;height:9px;border:1px solid var(--red);border-radius:50%;background:var(--paper);top:-5px}
 .ticket::before{left:-5px}.ticket::after{right:-5px}
-.ticket .qr{height:150px;display:grid;place-items:center;padding:6px;overflow:hidden}
+.ticket .qr{aspect-ratio:1;display:grid;place-items:center;padding:6px;overflow:hidden}
 .ticket .qr img{width:100%;height:100%;object-fit:contain;transition:transform .5s}
 .ticket:hover .qr img{transform:scale(1.045)}
 .ticket .tcap{border-top:1px dashed var(--rule);margin-top:8px;padding-top:8px}
@@ -331,7 +331,6 @@ figcaption{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:va
 .qr-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:520px}
 .qr-pair .ticket{border-color:var(--paper)}
 .qr-pair .ticket::before,.qr-pair .ticket::after{background:var(--ink);border-color:#E8665A}
-.qr-pair .ticket .qr{height:210px}
 .qr-pair .ticket .tcap span{color:#8C877B}
 .qr-pair .ticket .tcap b{color:var(--ink)}
 .sitecard{margin-top:76px;border-top:1px solid #4A463D;padding:34px 0 40px;display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:40px;align-items:center}
@@ -463,11 +462,9 @@ footer{background:var(--ink);color:#8C877B;padding:0 0 40px;border-top:1px solid
   .lrow h3{font-size:17px}
   .case-list a{grid-template-columns:60px 1fr 18px;gap:10px}
   .case-list b{font-size:14px}
-  .qr-pair .ticket .qr{height:160px}
   .know{grid-template-columns:36px 1fr;padding-right:0}
   .know:nth-child(even){padding-left:0}
   .ticket-row{gap:10px}
-  .ticket .qr{height:120px}
   .to-top{right:14px;bottom:14px}
 }
 @media(prefers-reduced-motion:reduce){
@@ -879,8 +876,8 @@ footer{background:var(--ink);color:#8C877B;padding:0 0 40px;border-top:1px solid
     <div class="rule reveal"></div>
     <div class="subrule reveal"><b>公司运营账户</b><span>Group A / 02</span></div>
     <div class="ticket-row">
-      <div class="ticket reveal"><div class="tno">QR / 01</div><div class="qr"><img src="img/qr-bilibili.jpg" alt="B站 麻辣格比 二维码" loading="lazy"></div><div class="tcap"><b>麻辣格比</b><span>Bilibili</span></div></div>
-      <div class="ticket reveal"><div class="tno">QR / 02</div><div class="qr"><img src="img/qr-xhs.jpg" alt="小红书 用AI做电商图的奶瓶 二维码" loading="lazy"></div><div class="tcap"><b>用AI做电商图的奶瓶</b><span>Xiaohongshu</span></div></div>
+      <div class="ticket reveal"><div class="tno">QR / 01</div><div class="qr"><img src="img/qr-code-bilibili.jpg" alt="B站 麻辣格比 二维码" loading="lazy"></div><div class="tcap"><b>麻辣格比</b><span>Bilibili</span></div></div>
+      <div class="ticket reveal"><div class="tno">QR / 02</div><div class="qr"><img src="img/qr-code-xhs.jpg" alt="小红书 用AI做电商图的奶瓶 二维码" loading="lazy"></div><div class="tcap"><b>用AI做电商图的奶瓶</b><span>Xiaohongshu</span></div></div>
       <aside class="group-note reveal">
         <span class="cap">Group A / Corporate</span>
         <b>02</b>
@@ -890,9 +887,9 @@ footer{background:var(--ink);color:#8C877B;padding:0 0 40px;border-top:1px solid
     </div>
     <div class="subrule reveal"><b>个人运营账户</b><span>Group B / 03</span></div>
     <div class="ticket-row">
-      <div class="ticket reveal"><div class="tno">QR / 03</div><div class="qr"><img src="img/qr-shipinhao.jpg" alt="视频号 AD玩AI视频版 二维码" loading="lazy"></div><div class="tcap"><b>AD玩AI视频版</b><span>WeChat Channels</span></div></div>
-      <div class="ticket reveal"><div class="tno">QR / 04</div><div class="qr"><img src="img/qr-mp.jpg" alt="微信公众号 AD玩AI 二维码" loading="lazy"></div><div class="tcap"><b>AD玩AI</b><span>WeChat MP</span></div></div>
-      <div class="ticket reveal"><div class="tno">QR / 05</div><div class="qr"><img src="img/qr-douyin.jpg" alt="抖音 不烧心 二维码" loading="lazy"></div><div class="tcap"><b>不烧心</b><span>Douyin</span></div></div>
+      <div class="ticket reveal"><div class="tno">QR / 03</div><div class="qr"><img src="img/qr-code-shipinhao.jpg" alt="视频号 AD玩AI视频版 二维码" loading="lazy"></div><div class="tcap"><b>AD玩AI视频版</b><span>WeChat Channels</span></div></div>
+      <div class="ticket reveal"><div class="tno">QR / 04</div><div class="qr"><img src="img/qr-code-mp.jpg" alt="微信公众号 AD玩AI 二维码" loading="lazy"></div><div class="tcap"><b>AD玩AI</b><span>WeChat MP</span></div></div>
+      <div class="ticket reveal"><div class="tno">QR / 05</div><div class="qr"><img src="img/qr-code-douyin.jpg" alt="抖音 不烧心 二维码" loading="lazy"></div><div class="tcap"><b>不烧心</b><span>Douyin</span></div></div>
       <aside class="group-note span2 reveal">
         <span class="cap">Group B / Personal</span>
         <b>03</b>
@@ -942,8 +939,8 @@ footer{background:var(--ink);color:#8C877B;padding:0 0 40px;border-top:1px solid
         </div>
       </div>
       <div class="qr-pair reveal">
-        <div class="ticket"><div class="tno">QR / 06</div><div class="qr"><img src="img/qr-wechat.jpg" alt="微信号二维码" loading="lazy"></div><div class="tcap"><b>微信号 · AIAD</b><span>Scan to add</span></div></div>
-        <div class="ticket"><div class="tno">QR / 07</div><div class="qr"><img src="img/qr-feishu.jpg" alt="飞书号二维码" loading="lazy"></div><div class="tcap"><b>飞书号 · AIAD</b><span>Scan to add</span></div></div>
+        <div class="ticket"><div class="tno">QR / 06</div><div class="qr"><img src="img/qr-code-wechat.jpg" alt="微信号二维码" loading="lazy"></div><div class="tcap"><b>微信号 · AIAD</b><span>Scan to add</span></div></div>
+        <div class="ticket"><div class="tno">QR / 07</div><div class="qr"><img src="img/qr-code-feishu.jpg" alt="飞书号二维码" loading="lazy"></div><div class="tcap"><b>飞书号 · AIAD</b><span>Scan to add</span></div></div>
       </div>
     </div>
 
